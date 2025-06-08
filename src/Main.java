@@ -1,15 +1,36 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.printf("i = " + i);
+//Opções de escolha
+ class Tabuleiro{
+     String [][] tabuleiro = new String [3][3];
+
+     public void aparencias() {
+         for (int i =0; i<3; i++){
+             for (int j=0; j<3; j++){
+                 String simbolo = tabuleiro[i][j];
+                 if (tabuleiro[i][j] == null) {
+                     System.out.print("[]");
+                 }else{
+                     System.out.print(simbolo);
+                 }
+             }
+             System.out.println();
+         }
+
+              }
+}
+ class Escolha{
+
+ }
+ class Condicoes{
+
+ }
+//Além de não permitir colocar no mesmo lugar mais de uma vez
+//Condições para vitória, derrota e empate
+//Times separados, tanto para O quanto para X
+
+    public class Main{
+        public static void main(String[] args){
+            Tabuleiro t = new Tabuleiro();
+            t.aparencias();
         }
     }
-}
